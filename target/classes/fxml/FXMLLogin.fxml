@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="208.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLControllerLogin">
+   <children>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="61.0" prefHeight="31.0" prefWidth="109.0" text="Contraseña:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      
+      <Label alignment="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="25.0" prefWidth="109.0" text="Usuario:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="106.0" prefHeight="25.0" prefWidth="109.0" text="DB:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="82.0" layoutY="161.0" mnemonicParsing="false" onAction="#loginEvent" prefHeight="25.0" prefWidth="231.0" text="Conectar" textFill="#129e25" />
+      <Text fill="#cc1919" layoutX="29.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="#cc1919" layoutX="11.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="#cc1919" layoutX="319.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Requeridas" />
+      <TextArea fx:id="userTextArea" layoutX="157.0" layoutY="24.0" prefHeight="16.0" prefWidth="200.0" promptText="Ingrese su usuario" AnchorPane.topAnchor="22.0">
+         <font>
+            <Font name="Arial Narrow" size="11.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="dbTextArea" layoutX="157.0" layoutY="110.0" prefHeight="16.0" prefWidth="200.0" promptText="Base de Datos(Opcional)" AnchorPane.topAnchor="108.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextArea>
+      <PasswordField fx:id="passField" layoutX="157.0" layoutY="61.0" prefHeight="31.0" prefWidth="200.0" promptText="Ingrese su contraseña" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font name="Arial Narrow Italic" size="11.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>
